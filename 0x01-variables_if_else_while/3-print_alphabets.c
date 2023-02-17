@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <unistd.h>
 /**
  * main - Entry point
  * Return: 0(Success)
@@ -15,8 +17,8 @@ int main(void)
 			c++;
 		}
 	while
-		(d <= 'z') {
-			putchar(c);
+		(d <= 'Z') {
+			putchar(d);
 			d++;
 		}
 	putchar('\n');
