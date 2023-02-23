@@ -1,10 +1,10 @@
 #include "main.h"
-
 /**
  * print_numbers - print 0-9
  * Return: void
  */
- void print_numbers(void)
+
+void print_numbers(void)
 {
 	char c;
 
@@ -13,4 +13,5 @@
 		_putchar(c);
 	}
 	_putchar('\n');
+	return (0);
 }
