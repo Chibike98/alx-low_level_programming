@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * prints_diagonal - draws a diagonal line
+ * print_diagonal - draws a diagonal line
  * @n: no of times char \ will be printed
  */
 void print_diagonal(int n)
