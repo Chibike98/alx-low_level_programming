@@ -1,19 +1,19 @@
 #include <stdio.h>
 /**
  * main - entry point
- * @argc: argument count
- * @argv: argument
- * Return: 0(success) and 1(Error)
+ * @agrc: argument count
+ * @agrv: argument
+ * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int agrc, char *agrv[])
 {
 	int a, b;
 
-	if (argc == 3)
+	if (agrc == 3)
 	{
-		a = atoi(argv[1]);
-		b = atoi(argv[2]);
-		printf("%d\n", a * b);
+		a = atoi(agrv[1]);
+		b = atoi(agrv[2]);
+	       printf("%d\n", a * b);
 		return (0);
 	}
 	printf("Error\n");
