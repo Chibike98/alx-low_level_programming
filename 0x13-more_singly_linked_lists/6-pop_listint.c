@@ -2,16 +2,13 @@
 
 int pop_listint(listint_t **head)
 {
-	int c;
-	listint_t *new;
-
-	if (*head == NULL)
+	if (head == NULL || *head == NULL)
 	{
 		return (0);
 	}
-	c = (*head)->c;
-	new = *head;
+	int c = (*head)->c;
+	listint_t *temp = *head;
 	*head = (*head)->next;
-	free(new);
+	free(temp);
 	return (c);
 }
