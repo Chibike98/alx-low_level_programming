@@ -5,9 +5,9 @@
  * @n: The integer to store in the new node.
  * Return: The address of the new node, or NULL if fail.
  */
-static listint_t *add_nodeint_helper(listint_t **head, const int n)
+static listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *new_node;
+	listint_t *New_Node;
 
 	New_Node = malloc(sizeof(listint_t));
 	if (New_Node == NULL)
@@ -19,6 +19,5 @@ static listint_t *add_nodeint_helper(listint_t **head, const int n)
 }
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	return (add_nodeint_helper(head, n));
+	return (add_nodeint(head, n));
 }
-
