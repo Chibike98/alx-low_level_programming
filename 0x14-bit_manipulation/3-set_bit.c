@@ -8,13 +8,13 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned long int mask = 1UL << index;
+	unsigned long int index_mask = 1UL << index;
 
 	if (index > 63)
 		return (-1);
-	if ((*n & mask) == 0)
+	if ((*n & index_mask) == 0)
 	{
-		*n += mask;
+		*n += index_mask;
 		return (1);
 	}
 	return (1);
