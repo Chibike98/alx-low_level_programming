@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_text_file - reads a text file and prints it to the POSIX standard output
+ * print_text_file - reads a textfile and prints it to POSIX standard output
  * @filename: The name of the file to read.
  * @max_chars: The maximum number of characters to read from the file.
  * Return: The actual number of bytes read and printed to STDOUT.
